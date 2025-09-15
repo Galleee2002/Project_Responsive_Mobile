@@ -1,0 +1,44 @@
+/* Tipografia Montserrat Header */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Tipografia Open Sans Sub-Titulos */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Tipografia Source Sans Body  */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --color--primary: #1b1b1b;
+  --color--secundary: #ffd60a;
+  --color--accent: #e63946;
+  --color--subaccent: #a6a6a7;
+  --text--header: "Montserrat";
+  --text--subHeader: "Open Sans";
+  --text--body: "Source Sans 3";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--text--header);
+}
+
+h4,
+h5,
+h6 {
+  font-family: var(--text--subHeader);
+}
+
+button {
+  font-family: var(--text--subHeader);
+  background-color: var(--color--accent);
+}
+
+body {
+  font-family: var(--text--body);
+  background-color: var(--color--primary);
+}
