@@ -9,12 +9,14 @@
   --color--primary: #1b1b1b;
   --color--secundary: #ffd60a;
   --color--accent: #e63946;
-  --color--subaccent: #a6a6a7;
-  --text--header: "Montserrat";
-  --text--subHeader: "Open Sans";
-  --text--body: "Source Sans 3";
+  --color--parrafo: #ffffff;
+  --color--degradado: linear-gradient(90deg, #e63946 0%, #ffd60a 100%);
+  --text--header: "Montserrat", sans-serif;
+  --text--subHeader: "Open Sans", sans-serif;
+  --text--body: "Source Sans 3", sans-serif;
 }
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -41,4 +43,61 @@ button {
 body {
   font-family: var(--text--body);
   background-color: var(--color--primary);
+}
+
+a {
+  font-family: var(--text--header);
+  font-weight: 700;
+  color: var(--color--parrafo);
+  text-decoration: none;
+}
+
+/* Clases HEADER */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color--parrafo);
+}
+
+.logo img {
+  max-height: 50px;
+  display: block;
+}
+
+.logo span {
+  background: var(--color--degradado);
+  /* Aclaracion: 
+  -webkit-background-clip: text → recorta el fondo al área del texto.
+  -webkit-text-fill-color: transparent → hace el texto “transparente” para que se vea el degradado en lugar de un color sólido. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--text--header);
+}
+
+.main-list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+  padding: 30px;
+  list-style: none;
+}
+
+.main-list li {
+  list-style: none;
+}
+
+.main-list li a:hover {
+  color: var(--color--secundary);
 }
