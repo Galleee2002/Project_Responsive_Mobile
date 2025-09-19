@@ -1,5 +1,12 @@
 /* Tipografia Montserrat Header */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Clash";
+  src: url("fonts/ClashGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Tipografia Open Sans Sub-Titulos */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /* Tipografia Source Sans Body  */
@@ -11,7 +18,7 @@
   --color--accent: #e63946;
   --color--parrafo: #ffffff;
   --color--degradado: linear-gradient(90deg, #e63946 0%, #ffd60a 100%);
-  --text--header: "Montserrat", sans-serif;
+  --text--header: "Clash", sans-serif;
   --text--subHeader: "Open Sans", sans-serif;
   --text--body: "Source Sans 3", sans-serif;
   --gap: 1rem;
@@ -114,7 +121,7 @@ a {
   height: clamp(280px, 38vw, 420px);
   margin: 0;
   overflow: hidden;
-  display: block; 
+  display: block;
 }
 
 .hero__img {
@@ -122,8 +129,8 @@ a {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /*recorte de imagen*/
-  object-position: center;  
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero::before {
@@ -132,54 +139,46 @@ a {
   inset: 0;
   background: linear-gradient(
     0deg,
-    rgba(0,0,0,.45) 0%,
-    rgba(0,0,0,.25) 60%,
-    rgba(0,0,0,.25) 100%
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.25) 60%,
+    rgba(0, 0, 0, 0.25) 100%
   );
 }
 
 .hero__wrap {
   position: relative;
   z-index: 1;
-  height: 100%;            
+  height: 100%;
   width: 100%;
   margin: 0;
-  padding:60px;     
+  padding: 60px;
   display: flex;
-  align-items: flex-end;   
-  justify-content: flex-start; /*pega el panel para el lado izquierdo del hero*/
-}
-
-.hero__panel {
-  background: rgba(255, 255, 255, 0.60);
-  border: 1px solid #e9e9e9;
-  border-radius: 16px;
-  padding: 22px 24px;
-  max-width: 580px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.15);
-  margin-left: 20px;      
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .hero__title {
   font-family: var(--text--header);
   font-weight: 800;
   line-height: 1.15;
-  color: var(--color--primary);
+  padding-bottom: 5px;
+  color: var(--color--parrafo);
   font-size: clamp(1.25rem, 2.4vw, 2rem);
-  margin-bottom: 8px;
-  text-wrap: balance; /*divide el texto de forma equilibrada*/
 }
 .hero__subtitle {
   font-family: var(--text--body);
-  color: #333;
+  color: #ffffff;
   line-height: 1.45;
-  margin-bottom: 14px;
+  padding-bottom: 5px;
 }
 
 .hero .button {
   display: inline-block;
-  margin: 0;
   padding: 12px 22px;
+}
+
+.hero__title span {
+  display: block;
 }
 
 /* Linea separadora */
@@ -365,9 +364,9 @@ a {
   font-weight: bold;
   font-family: var(--text--subHeader);
   border: none;
-  border-radius: 50px;
-  padding: 12px 35px;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 .button:hover {
@@ -468,4 +467,3 @@ a {
   font-size: 0.95rem;
   line-height: 1.4;
 }
-
