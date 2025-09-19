@@ -118,7 +118,7 @@ a {
   position: relative;
   width: 100%;
   min-height: 280px;
-  height: clamp(280px, 38vw, 420px);
+  height: calc(100vh - 79.5px);
   margin: 0;
   overflow: hidden;
   display: block;
@@ -189,7 +189,6 @@ a {
   margin: auto;
 }
 
-
 /* Sección EJERCICIOS EFECTIVOS */
 #ejercicios-efectivos {
   padding: 40px 0 60px 0;
@@ -199,12 +198,12 @@ a {
 .container-ejercicios {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   gap: 20px;
 }
 
 .card-ejercicios {
-  flex: 0 0 35%; 
+  flex: 0 0 35%;
   min-height: 400px;
   background: var(--color--secundary);
   border-radius: 5px;
@@ -555,7 +554,7 @@ a {
 .icon {
   width: 50px;
   height: 50px;
-  background-color: var(--color--accent); 
+  background-color: var(--color--accent);
   border-radius: 50%;
   display: flex;
   align-items: center;
