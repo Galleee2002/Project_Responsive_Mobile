@@ -460,7 +460,6 @@ a {
 .marquee {
   overflow: hidden;
   position: relative;
-
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0,
@@ -488,11 +487,11 @@ a {
 
 @keyframes scroll-rtl {
   from {
-    transform: translateX(-50%);
-  } /* inicia desplazado a la izquierda */
+    transform: translateX(0);
+  }
   to {
-    transform: translateX(0%);
-  } /* se mueve a la derecha */
+    transform: translateX(-50%);
+  }
 }
 
 .marquee:hover .marquee__track,
@@ -518,6 +517,7 @@ a {
   background: var(--color--parrafo);
   color: var(--color--accent);
 }
+
 .card img {
   width: 64px;
   height: 64px;
@@ -532,14 +532,17 @@ a {
   flex-direction: column;
   gap: 0.15rem;
 }
+
 .card__body h3 {
   font: 700 1rem/1.1 system-ui, sans-serif;
 }
+
 .role {
   color: var(--color--primary);
   font-size: 0.9rem;
   font-weight: 600;
 }
+
 .quote {
   font-size: 0.95rem;
   line-height: 1.4;
