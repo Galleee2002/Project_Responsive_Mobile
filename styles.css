@@ -597,37 +597,36 @@ a {
 }
 
 @media screen and (min-width: 501px) and (max-width: 1000px) {
-  .footer {
-    padding: 60px 20px;
-  }
-
-  .title {
-    font-size: 1rem;
-  }
-
-  .footer h2 {
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-  }
-
-  .footer__socials {
-    gap: 40px;
-  }
-
-  .icon {
-    width: 45px;
-    height: 45px;
-  }
-
-  .icon img {
-    width: 26px;
-    height: 26px;
-  }
-
   :root {
     --card-w: 280px;
     --card-h: 170px;
     --speed: 28s;
+  }
+
+  /*Sección de 'Ejercicios efectivos'*/
+  #ejercicios-efectivos{
+    padding: 20px 0 40px 0;
+  }
+
+  .container-ejercicios{
+    gap: 20px;
+  }
+
+  .card-ejercicios{
+    flex: 0 0 40%;
+  }
+
+  .card-ejercicios-content h3{
+    font-size: 1.4rem;
+  }
+
+  .card-ejercicios-content p {
+    font-size: 1rem;
+  }
+
+  .card-ejercicios:hover {
+    transform: none;
+    box-shadow: none;
   }
 
   .main-nav {
@@ -654,11 +653,10 @@ a {
     height: 360px;
     border-radius: 32px;
   }
-}
 
-@media screen and (max-width: 500px) {
+  /*Footer*/
   .footer {
-    padding: 60px 0;
+    padding: 60px 20px;
   }
 
   .title {
@@ -666,39 +664,56 @@ a {
   }
 
   .footer h2 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
   }
 
   .footer__socials {
-    gap: 25px;
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .social-item {
-    gap: 8px;
+    gap: 40px;
   }
 
   .icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   .icon img {
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
   }
+}
 
-  .footer__copyright {
-    font-size: 0.8rem;
-  }
-
+@media screen and (max-width: 500px) {
   :root {
     --gap: 0.75rem;
     --card-w: 240px;
     --card-h: 160px;
     --speed: 26s;
+  }
+
+
+  /*Sección de 'Ejercicios efectivos'*/
+  .container-ejercicios{
+    align-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-ejercicios{
+    width: 85%;
+  }
+
+  .card-ejercicios-content h3{
+    font-size: 1.4rem;
+  }
+
+  .card-ejercicios-content p {
+    font-size: 1rem;
+  }
+
+  .card-ejercicios:hover {
+    transform: none;
+    box-shadow: none;
   }
 
   .main-nav {
@@ -748,5 +763,43 @@ a {
     max-width: 420px;
     height: 260px;
     border-radius: 24px;
+  }
+
+  /*Footer*/
+  .footer {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .footer h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .footer__socials {
+    gap: 25px;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .social-item {
+    gap: 8px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer__copyright {
+    font-size: 0.8rem;
   }
 }
