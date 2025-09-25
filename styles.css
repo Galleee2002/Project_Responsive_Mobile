@@ -9,8 +9,13 @@
 
 /* Tipografia Open Sans Sub-Titulos */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/* Tipografia Source Sans Body  */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+/* Tipografia Clash Grotesk Medium  */
+@font-face {
+  font-family: "Clash Medium";
+  src: url("fonts/ClashGrotesk-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --color--primary: #1b1b1b;
@@ -20,7 +25,7 @@
   --color--degradado: linear-gradient(90deg, #e63946 0%, #ffd60a 100%);
   --text--header: "Clash", sans-serif;
   --text--subHeader: "Open Sans", sans-serif;
-  --text--body: "Source Sans 3", sans-serif;
+  --text--body: "Clash Medium", sans-serif;
   --gap: 1rem;
   --card-w: 320px;
   --card-h: 180px;
@@ -603,51 +608,51 @@ a {
     --speed: 28s;
   }
 
- .hero{
-  height: 40rem;
-}
+  .hero {
+    height: 40rem;
+  }
 
-  .hero__wrap{
-    padding: 2.5rem; 
-    align-items: flex-end; 
+  .hero__wrap {
+    padding: 2.5rem;
+    align-items: flex-end;
     justify-content: flex-start;
   }
 
-  .hero__title{
+  .hero__title {
     font-size: 2rem;
   }
 
-  .hero__subtitle{
-    font-size: 1.125rem; 
+  .hero__subtitle {
+    font-size: 1.125rem;
     max-width: 520px;
   }
 
-  .hero .button{
-    padding: 0.75rem 1.25rem; 
+  .hero .button {
+    padding: 0.75rem 1.25rem;
     font-size: 1rem;
   }
 
-  .hero__img{
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+  .hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: 35% center;
   }
-  
+
   /*Sección de 'Ejercicios efectivos'*/
-  #ejercicios-efectivos{
+  #ejercicios-efectivos {
     padding: 20px 0 40px 0;
   }
 
-  .container-ejercicios{
+  .container-ejercicios {
     gap: 20px;
   }
 
-  .card-ejercicios{
+  .card-ejercicios {
     flex: 0 0 40%;
   }
 
-  .card-ejercicios-content h3{
+  .card-ejercicios-content h3 {
     font-size: 1.4rem;
   }
 
@@ -722,55 +727,55 @@ a {
     --speed: 26s;
   }
 
-.hero{
-  height: 34rem;
-}
+  .hero {
+    height: 34rem;
+  }
 
-  .hero__wrap{
-    padding: 1.125rem; 
-    align-items: flex-end; 
+  .hero__wrap {
+    padding: 1.125rem;
+    align-items: flex-end;
     justify-content: flex-start;
   }
 
-  .hero__panel{
-    max-width: 300px; 
-    background: rgba(0,0,0,.35); 
-    border-radius: 0.75rem; 
-    padding: 0.875rem; 
-    }
+  .hero__panel {
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 0.75rem;
+    padding: 0.875rem;
+  }
 
-  .hero__title{
+  .hero__title {
     font-size: 1.5rem;
   }
 
-  .hero__subtitle{
+  .hero__subtitle {
     font-size: 1rem;
   }
 
-  .hero .button{
-    padding: 0.625rem 1rem; 
+  .hero .button {
+    padding: 0.625rem 1rem;
     font-size: 0.95rem;
   }
 
-  .hero__img{
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+  .hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: 30% center;
   }
 
   /*Sección de 'Ejercicios efectivos'*/
-  .container-ejercicios{
+  .container-ejercicios {
     align-content: center;
     flex-direction: column;
     gap: 30px;
   }
 
-  .card-ejercicios{
+  .card-ejercicios {
     width: 85%;
   }
 
-  .card-ejercicios-content h3{
+  .card-ejercicios-content h3 {
     font-size: 1.4rem;
   }
 
